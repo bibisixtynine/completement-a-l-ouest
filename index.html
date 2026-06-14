@@ -31,10 +31,10 @@
       <p class="motto">Ni prêt-à-penser,<br>ni prêt-à-s'indigner.</p>
     </div>
     <nav class="sections" aria-label="Filtrer les articles">
-      <button class="active" data-filter="all">Toute l'édition</button>
-      <button data-filter="sport">Sport & société</button>
-      <button data-filter="democratie">Démocratie</button>
-      <button data-filter="politique">Politique</button>
+      <button class="active" data-filter="all" aria-pressed="true">Toute l'édition <span>4</span></button>
+      <button data-filter="sport" aria-pressed="false">Sport & société <span>2</span></button>
+      <button data-filter="democratie" aria-pressed="false">Démocratie <span>1</span></button>
+      <button data-filter="politique" aria-pressed="false">Politique <span>1</span></button>
     </nav>
   </header>
 
@@ -59,7 +59,15 @@
       <div><strong>04</strong><span>Glucksmann</span><small>Présidentielle, stratégie</small></div>
     </section>
 
-    <section class="articles">
+    <section class="articles" id="articles">
+      <div class="filter-result" id="filter-result" aria-live="polite">
+        <div>
+          <span class="filter-result-label">Vous consultez</span>
+          <strong id="filter-result-title">Toute l'édition</strong>
+        </div>
+        <p id="filter-result-count">4 articles pour prendre le temps de penser.</p>
+        <button id="clear-filter" hidden>Afficher toute l'édition</button>
+      </div>
       <article class="article-card story lead" data-category="sport" id="bresil-maroc">
         <header>
           <p class="kicker">Tendance n°1 · Brésil, Maroc, Vinícius, Ancelotti</p>

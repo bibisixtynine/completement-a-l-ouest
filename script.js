@@ -1,16 +1,41 @@
 const buttons = document.querySelectorAll("[data-filter]");
 const stories = document.querySelectorAll(".story");
+const articles = document.querySelector("#articles");
+const filterResultTitle = document.querySelector("#filter-result-title");
+const filterResultCount = document.querySelector("#filter-result-count");
+const clearFilter = document.querySelector("#clear-filter");
+
+const filterArticles = (selected, shouldScroll = true) => {
+  const activeButton = document.querySelector(`[data-filter="${selected}"]`);
+  let visibleCount = 0;
+
+  buttons.forEach((item) => {
+    const isActive = item === activeButton;
+    item.classList.toggle("active", isActive);
+    item.setAttribute("aria-pressed", String(isActive));
+  });
+
+  stories.forEach((story) => {
+    const isVisible = selected === "all" || story.dataset.category === selected;
+    story.hidden = !isVisible;
+    if (isVisible) visibleCount += 1;
+  });
+
+  const title = activeButton.textContent.replace(/\d+$/, "").trim();
+  filterResultTitle.textContent = title;
+  filterResultCount.textContent = `${visibleCount} article${visibleCount > 1 ? "s" : ""} dans cette sélection.`;
+  clearFilter.hidden = selected === "all";
+
+  if (shouldScroll) {
+    articles.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 
 buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const selected = button.dataset.filter;
-
-    buttons.forEach((item) => item.classList.toggle("active", item === button));
-    stories.forEach((story) => {
-      story.hidden = selected !== "all" && story.dataset.category !== selected;
-    });
-  });
+  button.addEventListener("click", () => filterArticles(button.dataset.filter));
 });
+
+clearFilter.addEventListener("click", () => filterArticles("all"));
 
 const commentsEndpoint = "https://api.github.com/repos/bibisixtynine/completement-a-l-ouest/discussions/1/comments";
 const commentList = document.querySelector("#comment-list");

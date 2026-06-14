@@ -4,6 +4,8 @@ Un journal indépendant expérimental qui transforme les tendances X du jour en 
 
 Le projet privilégie la liberté de pensée : faits, arguments concurrents, angles morts et sources sont explicitement séparés. Les commentaires publics sont hébergés dans un fil GitHub Discussions dédié.
 
+Chaque article est accompagné d'une illustration éditoriale originale conçue comme un contrechamp conceptuel.
+
 ## Lancer le projet
 
 ```sh

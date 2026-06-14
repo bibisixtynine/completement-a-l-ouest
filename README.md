@@ -2,7 +2,7 @@
 
 Un journal indépendant expérimental qui transforme les tendances X du jour en articles longs, sourcés et contradictoires.
 
-Le projet privilégie la liberté de pensée : faits, arguments concurrents, angles morts et sources sont explicitement séparés. Les commentaires publics sont hébergés dans un fil GitHub Discussions dédié.
+Le projet privilégie la liberté de pensée : faits, arguments concurrents, angles morts et sources sont explicitement séparés. Sa voix originale s'inspire du goût du paradoxe de Louis Pauwels et du doute méthodique de Bertrand Russell. Les commentaires publics sont hébergés dans un fil GitHub Discussions dédié.
 
 Chaque article est accompagné d'une illustration éditoriale originale conçue comme un contrechamp conceptuel.
 

@@ -27,6 +27,12 @@ h2,h3,p { text-wrap:pretty; }
 .editorial-copy { columns:2; column-gap:1.8rem; column-rule:1px solid var(--rule); line-height:1.48; }
 .editorial-copy p { margin-top:0; }
 .dropcap { float:left; margin:-.1rem .35rem 0 0!important; color:var(--red); font:500 5rem/.8 "Oswald",sans-serif; }
+.lineage { display:grid; grid-template-columns:repeat(3,1fr); border-bottom:5px solid var(--rule); }
+.lineage div { padding:1.2rem; border-right:1px solid var(--rule); }
+.lineage div:first-child { padding-left:0; }
+.lineage div:last-child { padding-right:0; border-right:0; }
+.lineage h3 { margin:0 0 .6rem; font:500 1.55rem/1 "Oswald",sans-serif; text-transform:uppercase; }
+.lineage p:last-child { margin:0; font-size:.88rem; line-height:1.45; }
 .trend-board { display:grid; grid-template-columns:repeat(4,1fr); padding:1.2rem 0; border-bottom:1px solid var(--rule); }
 .trend-board div { display:grid; gap:.2rem; padding:0 1rem; border-right:1px solid var(--rule); }
 .trend-board div:first-child { padding-left:0; }
@@ -96,6 +102,7 @@ details[open] summary span { transform:rotate(45deg); }
 .comment-body { margin:0; line-height:1.4; }
 footer { display:flex; justify-content:space-between; gap:2rem; padding:1.2rem 0 2.5rem; border-top:4px double var(--rule); font:400 .62rem/1.45 "DM Mono",monospace; }
 footer p { max-width:58ch; margin:0; }
+footer a { color:var(--blue); }
 .story[hidden] { display:none; }
 @media(max-width:800px) {
   .edition-line span:nth-child(2),.manifesto { display:none; }
@@ -104,7 +111,8 @@ footer p { max-width:58ch; margin:0; }
   .sections { overflow-x:auto; justify-content:start; }
   .sections button { flex:0 0 auto; }
   .filter-result { grid-template-columns:1fr; }
-  .editorial,.comments,.article-card header,.article-body { grid-template-columns:1fr; }
+  .editorial,.comments,.article-card header,.article-body,.lineage { grid-template-columns:1fr; }
+  .lineage div,.lineage div:first-child,.lineage div:last-child { padding:1rem 0; border-right:0; border-bottom:1px solid var(--rule); }
   .editorial-copy,.article-body>section:first-child { columns:1; }
   .trend-board { grid-template-columns:1fr 1fr; gap:1rem 0; }
   .trend-board div:nth-child(2) { border-right:0; }

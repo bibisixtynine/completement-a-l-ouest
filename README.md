@@ -1,8 +1,8 @@
 # Complètement à l'ouest !
 
-Une Une satirique autonome inspirée des sujets mis en avant par Ouest-France le 14 juin 2026.
+Un journal indépendant expérimental qui transforme les tendances X du jour en articles longs, sourcés et contradictoires.
 
-Les commentaires publics sont hébergés dans un fil GitHub Discussions dédié et les dernières réponses sont affichées sur la page.
+Le projet privilégie la liberté de pensée : faits, arguments concurrents, angles morts et sources sont explicitement séparés. Les commentaires publics sont hébergés dans un fil GitHub Discussions dédié.
 
 ## Lancer le projet
 
@@ -12,4 +12,4 @@ python3 -m http.server 8000
 
 Puis ouvrir `http://localhost:8000/completement-a-l-ouest/`.
 
-Ce projet est une parodie indépendante. Il ne reproduit aucun article original.
+Ce projet est indépendant. Il ne reproduit aucun article original et ne prétend pas mesurer l'opinion publique.

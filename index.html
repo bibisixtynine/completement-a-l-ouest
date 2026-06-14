@@ -3,138 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Complètement à l'ouest !, une parodie satirique de l'actualité du jour.">
-  <title>Complètement à l'ouest ! — 14 juin 2026</title>
+  <meta name="description" content="Complètement à l'ouest ! transforme les tendances du jour en articles sourcés pour penser librement.">
+  <title>Complètement à l'ouest ! — Penser plus loin que le fil</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="ticker" aria-label="Dernière minute">
-    <span class="ticker-label">Dernière minute</span>
+  <div class="ticker">
+    <span class="ticker-label">Sur X maintenant</span>
     <div class="ticker-track">
-      <span>Le réel dément avoir été consulté avant publication</span>
-      <span>La météo maintient ses prévisions malgré les faits</span>
-      <span>Un expert appelle à davantage d'experts</span>
+      <span>Brésil · Maroc · Vinícius</span><span>Knicks · Brunson · Wemby</span>
+      <span>La Suisse · Glucksmann · Elon Musk</span><span>Ce qui est viral n'est pas forcément vital</span>
     </div>
   </div>
 
   <header class="masthead">
     <div class="edition-line">
       <span>Dimanche 14 juin 2026</span>
-      <span>Édition France vaguement profonde</span>
-      <span>2,20 € · Prix psychologique</span>
+      <span>Édition des idées en circulation</span>
+      <span>Prix libre · Esprit compris</span>
     </div>
     <div class="brand-row">
-      <p class="manifesto">Le quotidien qui<br>tourne avec le vent</p>
+      <p class="manifesto">Voir ce qui agite.<br>Comprendre ce qui compte.</p>
       <h1>Complètement<br><em>à l'ouest !</em></h1>
-      <div class="weather">
-        <span class="weather-icon">☁</span>
-        <p><strong>17°</strong><br>Ressenti : lundi</p>
-      </div>
+      <p class="motto">Ni prêt-à-penser,<br>ni prêt-à-s'indigner.</p>
     </div>
-    <nav class="sections" aria-label="Rubriques">
-      <button class="active" data-filter="all">La Une</button>
-      <button data-filter="monde">Le vaste monde</button>
-      <button data-filter="sport">Sport & sueur</button>
-      <button data-filter="societe">Nos petits soucis</button>
+    <nav class="sections" aria-label="Filtrer les articles">
+      <button class="active" data-filter="all">Toute l'édition</button>
+      <button data-filter="sport">Sport & société</button>
+      <button data-filter="democratie">Démocratie</button>
+      <button data-filter="politique">Politique</button>
     </nav>
   </header>
 
   <main>
-    <section class="lead-grid">
-      <article class="lead-story story" data-category="monde">
-        <p class="kicker">Diplomatie · Exclusif mais pas trop</p>
-        <h2>La planète évacuée par précaution</h2>
-        <p class="deck">Après une nouvelle journée de tensions, les dirigeants mondiaux annoncent avoir trouvé un accord historique : continuer à discuter de l'éventualité d'un accord.</p>
-        <div class="illustration globe" aria-label="Illustration d'un globe terrestre">
-          <div class="orbit"></div>
-          <span>ON SE<br>RAPPELLE</span>
-        </div>
-        <p class="caption">La Terre, photographiée juste avant de couper les notifications.</p>
-      </article>
-
-      <aside class="side-stack">
-        <article class="short-story story" data-category="sport">
-          <p class="kicker">24 Heures du Mans</p>
-          <h3>Une voiture s'arrête : stupeur dans une course où le but était de ne pas le faire</h3>
-          <p>Les mécaniciens confirment qu'ils vont regarder sous le capot avec un air très professionnel.</p>
-        </article>
-        <article class="short-story story" data-category="sport">
-          <p class="kicker">Coupe du monde</p>
-          <h3>L'Angleterre officialise son plan de jeu : les galères, mais méthodiquement</h3>
-          <p>De son côté, Curaçao savoure déjà sa victoire au Scrabble.</p>
-        </article>
-        <article class="short-story story" data-category="societe">
-          <p class="kicker">Suisse</p>
-          <h3>Le pays vote pour savoir s'il reste encore une petite place près de la fenêtre</h3>
-          <p>Le plafond de dix millions d'habitants devra respecter les normes d'isolation.</p>
-        </article>
-      </aside>
-    </section>
-
-    <section class="editorial story" data-category="societe">
-      <div class="editorial-heading">
-        <p class="kicker">L'édito du dimanche</p>
-        <h2>IA : halte au pillage !<br><span>Mais garde-nous deux titres rigolos.</span></h2>
+    <section class="editorial">
+      <div>
+        <p class="kicker">Notre méthode</p>
+        <h2>Le fil montre ce qui monte.<br><span>Pas ce qui mérite votre assentiment.</span></h2>
       </div>
       <div class="editorial-copy">
-        <p class="dropcap">I</p>
-        <p>l faut sauver l'information. C'est entendu. Elle était tranquillement posée là, entre une publicité pour une véranda et le classement des meilleures friteuses, quand des machines sont arrivées avec leurs grands sabots statistiques.</p>
-        <p>Nous exigeons donc que l'intelligence artificielle respecte le travail des journalistes, la complexité du monde et, surtout, le point-virgule. En retour, nous promettons de ne plus appeler « révolution » chaque bouton ajouté à une application.</p>
-        <p><strong>Notre proposition :</strong> pour chaque résumé généré, une machine devra passer trois heures en conférence de rédaction et apporter les croissants. La démocratie ne sera peut-être pas sauvée, mais quelqu'un aura enfin pensé aux croissants.</p>
-        <p class="signature">La rédaction, assistée par son sens de l'ironie</p>
+        <p class="dropcap">U</p>
+        <p>ne tendance sur X mesure une accélération de conversation, pas la vérité, ni même l'opinion générale. Elle peut naître d'un événement majeur, d'un match, d'une polémique minuscule ou d'un groupe très mobilisé.</p>
+        <p>Nous prenons ces signaux comme points de départ. Puis nous ralentissons : faits vérifiables, contexte, arguments concurrents, intérêts en jeu et questions ouvertes. Notre ambition n'est pas de conclure à votre place, mais de rendre votre désaccord plus précis.</p>
+        <p><strong>Principe directeur :</strong> la liberté d'expression protège la possibilité de parler ; la liberté de pensée exige aussi le temps, les sources et le droit de changer d'avis.</p>
       </div>
     </section>
 
-    <section class="lower-grid">
-      <article class="feature story" data-category="societe">
-        <div class="feature-art garden"><span>€</span></div>
-        <p class="kicker">Pouvoir d'achat</p>
-        <h3>Les Français renouent avec la nature en regardant leur jardin par la fenêtre</h3>
-        <p>Face au budget en berne, les plantes d'intérieur sont priées de devenir autonomes et de contribuer aux charges.</p>
+    <section class="trend-board" aria-label="Tendances observées">
+      <div><strong>01</strong><span>Brésil / Maroc</span><small>Football, identité, récit</small></div>
+      <div><strong>02</strong><span>Knicks / Spurs</span><small>Héros, données, mémoire</small></div>
+      <div><strong>03</strong><span>La Suisse</span><small>Démographie, choix collectif</small></div>
+      <div><strong>04</strong><span>Glucksmann</span><small>Présidentielle, stratégie</small></div>
+    </section>
+
+    <section class="articles">
+      <article class="article-card story lead" data-category="sport" id="bresil-maroc">
+        <header>
+          <p class="kicker">Tendance n°1 · Brésil, Maroc, Vinícius, Ancelotti</p>
+          <h2>Un match nul peut-il raconter deux pays qui changent ?</h2>
+          <p class="deck">Le Brésil et le Maroc ont fait match nul 1–1 pour leur entrée dans la Coupe du monde. Sur X, le résultat devient aussitôt verdict. Pourtant, ce match dit surtout combien nos attentes survivent plus longtemps que les équipes réelles.</p>
+          <div class="article-meta"><span>7 min de lecture</span><span>Sport & société</span><span>4 sources</span></div>
+        </header>
+        <details>
+          <summary>Lire l'analyse <span>+</span></summary>
+          <div class="article-body">
+            <section>
+              <h3>Ce que l'on sait</h3>
+              <p>Le Maroc a ouvert le score par Ismaël Saibari après avoir dominé une partie du premier acte. Vinícius Júnior a égalisé avant la pause. Le Brésil a progressé après des ajustements de Carlo Ancelotti, sans parvenir à gagner. Un point chacun : fait banal en classement, matière abondante pour les récits.</p>
+              <p>Le Maroc n'est plus une surprise au sens strict. Demi-finaliste en 2022 et capable de battre le Brésil en amical en 2023, il possède une génération installée au plus haut niveau européen. Le présenter comme un petit qui dérange un géant est flatteur, mais paresseux.</p>
+            </section>
+            <section class="argument-grid">
+              <div><h3>Lecture A : le Brésil inquiète</h3><p>Une sélection riche en talents mais dépendante d'exploits individuels peut souffrir face aux blocs coordonnés. Le prestige du maillot ne résout ni les distances entre lignes ni les mauvais placements.</p></div>
+              <div><h3>Lecture B : le Maroc confirme</h3><p>Presser, fermer les angles et ressortir proprement ne relève pas d'un miracle. C'est le produit d'une stratégie sportive, d'une diaspora de talents et d'une expérience collective accumulée.</p></div>
+            </section>
+            <aside class="critical"><strong>Le piège du fil</strong><p>Après un seul match, les réseaux transforment chaque geste en essence nationale : le Brésil serait « fini », le Maroc « héroïque ». Un match renseigne sur une performance ; il prouve rarement une destinée.</p></aside>
+            <section>
+              <h3>Ce qu'il faut regarder ensuite</h3>
+              <p>La capacité du Brésil à créer sans attendre un éclair de Vinícius ; la manière dont le Maroc gère le statut d'équipe désormais attendue ; et l'effet du format élargi à 48 équipes, qui permet davantage de calcul sans rendre les rencontres moins intenses.</p>
+            </section>
+            <div class="sources"><strong>Sources pour creuser</strong>
+              <a href="https://www.theguardian.com/football/2026/jun/14/brazil-morocco-world-cup-match-report" target="_blank" rel="noreferrer">The Guardian — compte rendu du match</a>
+              <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026" target="_blank" rel="noreferrer">FIFA — compétition et calendrier officiels</a>
+              <a href="https://trends24.in/france/" target="_blank" rel="noreferrer">Trends24 — tendances X France observées</a>
+              <a href="https://twitter.com/search?q=Br%C3%A9sil%20Maroc" target="_blank" rel="noreferrer">X — conversation brute Brésil–Maroc</a>
+            </div>
+          </div>
+        </details>
       </article>
-      <article class="feature story" data-category="societe">
-        <div class="feature-art phone"><span>15</span></div>
-        <p class="kicker">Numérique</p>
-        <h3>Majorité numérique à 15 ans : les adultes devront attendre encore un peu</h3>
-        <p>La mesure vise à protéger les adolescents des réseaux sociaux et les réseaux sociaux des commentaires de tonton.</p>
+
+      <article class="article-card story" data-category="sport" id="knicks-spurs">
+        <header>
+          <p class="kicker">Tendance n°2 · Knicks, Brunson, Spurs, Wemby</p>
+          <h2>Pourquoi nous avons besoin de héros sportifs</h2>
+          <p class="deck">New York célèbre son premier titre NBA depuis 1973 après une victoire 94–90 contre San Antonio. Jalen Brunson a marqué 45 points. C'est vrai. Mais raconter le titre comme l'œuvre d'un seul homme est un choix, pas une obligation.</p>
+          <div class="article-meta"><span>6 min de lecture</span><span>Sport & société</span><span>4 sources</span></div>
+        </header>
+        <details>
+          <summary>Lire l'analyse <span>+</span></summary>
+          <div class="article-body">
+            <section>
+              <h3>Le héros simplifie une réalité collective</h3>
+              <p>Brunson a inscrit presque la moitié des points de son équipe lors du match décisif et obtenu le titre de meilleur joueur des finales. Sa performance mérite l'admiration. Mais elle n'existe pas sans écrans, rebonds, défense, recrutement, soins, analyse vidéo et décisions financières.</p>
+              <p>Le récit héroïque fonctionne parce qu'il donne un visage à une organisation complexe. Il rend l'émotion transmissible. Son défaut est de faire disparaître les conditions qui rendent l'exploit possible, puis de transformer le vainqueur en preuve morale : s'il a gagné, ce serait qu'il le méritait davantage.</p>
+            </section>
+            <section class="argument-grid">
+              <div><h3>Le mérite individuel existe</h3><p>Le talent, la discipline et la décision sous pression ne sont pas des illusions. Refuser tout héroïsme peut devenir une manière élégante de ne jamais admirer personne.</p></div>
+              <div><h3>Le contexte choisit aussi ses héros</h3><p>La ville de New York, son marché médiatique et cinquante-trois ans d'attente amplifient le récit. La même performance ailleurs n'aurait peut-être pas occupé autant d'espace.</p></div>
+            </section>
+            <aside class="critical"><strong>Question à garder</strong><p>Les statistiques corrigent-elles nos biais, ou leur donnent-elles simplement une allure scientifique ? Choisir les points plutôt que la défense, le dernier tir plutôt que les possessions précédentes, c'est déjà raconter.</p></aside>
+            <section><h3>Wembanyama et la défaite fertile</h3><p>La présence de Victor Wembanyama dans les tendances françaises rappelle que nous suivons souvent une compétition étrangère à travers un compatriote. Une défaite peut alors devenir un chapitre prometteur plutôt qu'un échec définitif. Le sport nous entraîne, parfois utilement, à penser dans le temps long.</p></section>
+            <div class="sources"><strong>Sources pour creuser</strong>
+              <a href="https://www.theguardian.com/sport/2026/jun/14/jalen-brunson-knicks-championship-reaction-finals-mvp-spurs" target="_blank" rel="noreferrer">The Guardian — Brunson et le titre des Knicks</a>
+              <a href="https://www.nba.com/playoffs/2026" target="_blank" rel="noreferrer">NBA — statistiques et résultats officiels</a>
+              <a href="https://trends24.in/france/" target="_blank" rel="noreferrer">Trends24 — tendances X France observées</a>
+              <a href="https://twitter.com/search?q=Knicks%20Brunson%20Wemby" target="_blank" rel="noreferrer">X — conversation brute</a>
+            </div>
+          </div>
+        </details>
       </article>
-      <article class="feature story" data-category="monde">
-        <div class="feature-art sea"><span>≈</span></div>
-        <p class="kicker">Climat</p>
-        <h3>À Miquelon, la mer insiste pour devenir voisine de palier</h3>
-        <p>Les habitants déménagent. L'océan, lui, n'a toujours pas fourni son attestation d'assurance.</p>
+
+      <article class="article-card story" data-category="democratie" id="suisse">
+        <header>
+          <p class="kicker">Tendance n°3 · La Suisse</p>
+          <h2>Peut-on voter sur le nombre idéal d'habitants ?</h2>
+          <p class="deck">Les Suisses se prononcent sur un plafond de dix millions d'habitants d'ici 2050. Derrière un chiffre apparemment précis se cachent des choix sur l'immigration, la croissance, le logement et la définition même du « nous ».</p>
+          <div class="article-meta"><span>8 min de lecture</span><span>Démocratie</span><span>5 sources</span></div>
+        </header>
+        <details>
+          <summary>Lire l'analyse <span>+</span></summary>
+          <div class="article-body">
+            <section><h3>Le chiffre donne une forme à une inquiétude</h3><p>La Suisse approche neuf millions d'habitants. L'initiative portée par l'Union démocratique du centre veut empêcher la population résidente permanente de dépasser dix millions avant 2050. À partir de 9,5 millions, les autorités devraient agir, notamment sur l'asile, le regroupement familial et les permis de séjour. L'accord de libre circulation avec l'Union européenne pourrait être remis en cause.</p><p>Les partisans relient croissance démographique, logements chers, infrastructures saturées et pression environnementale. Les opposants répondent qu'un plafond ne construit aucun logement, ne forme aucun soignant et risque d'affaiblir une économie dépendante de travailleurs étrangers.</p></section>
+            <section class="argument-grid">
+              <div><h3>Argument pour</h3><p>Une société a le droit de fixer démocratiquement les limites qu'elle juge soutenables. Sans borne, les coûts de la croissance peuvent être supportés par ceux qui en profitent le moins.</p></div>
+              <div><h3>Argument contre</h3><p>Un plafond national traite toutes les personnes comme une quantité interchangeable. Il peut masquer les vraies causes : aménagement, fiscalité, sous-investissement ou concentration des emplois.</p></div>
+            </section>
+            <aside class="critical"><strong>La question démocratique</strong><p>Qui participe au vote sur la taille de la population ? Les résidents étrangers représentent une part importante du pays mais n'ont généralement pas voix au chapitre au niveau fédéral. La démocratie directe rend le choix plus proche du citoyen, sans résoudre automatiquement la question de qui est citoyen.</p></aside>
+            <section><h3>Ce que le oui/non efface</h3><p>Une population n'est pas seulement un nombre : elle a un âge, des métiers, des lieux de vie, des besoins et des liens. Inversement, invoquer l'économie ne suffit pas à invalider toute inquiétude sur la capacité d'accueil. Le débat devient plus honnête lorsque chaque camp explicite qui gagnerait, qui paierait et quelles solutions alternatives il accepte.</p></section>
+            <div class="sources"><strong>Sources pour creuser</strong>
+              <a href="https://apnews.com/article/03b42363567cfa9ff29c0995bb4ff711" target="_blank" rel="noreferrer">Associated Press — enjeux du référendum</a>
+              <a href="https://www.admin.ch/gov/fr/accueil/documentation/votations.html" target="_blank" rel="noreferrer">Confédération suisse — votations fédérales</a>
+              <a href="https://www.ch.ch/fr/votations-et-elections/initiatives/" target="_blank" rel="noreferrer">ch.ch — fonctionnement d'une initiative populaire</a>
+              <a href="https://trends24.in/france/" target="_blank" rel="noreferrer">Trends24 — présence de « La Suisse » dans les tendances</a>
+              <a href="https://twitter.com/search?q=%22La%20Suisse%22%2010%20millions" target="_blank" rel="noreferrer">X — conversation brute</a>
+            </div>
+          </div>
+        </details>
       </article>
+
+      <article class="article-card story" data-category="politique" id="glucksmann">
+        <header>
+          <p class="kicker">Tendance n°4 · Glucksmann</p>
+          <h2>Être candidat sans le dire : la campagne avant la campagne</h2>
+          <p class="deck">Raphaël Glucksmann veut « sortir la gauche du fatalisme de la défaite » et avance vers 2027 sans candidature formelle. Ce flou n'est pas seulement une hésitation : c'est une technologie politique.</p>
+          <div class="article-meta"><span>7 min de lecture</span><span>Politique</span><span>5 sources</span></div>
+        </header>
+        <details>
+          <summary>Lire l'analyse <span>+</span></summary>
+          <div class="article-body">
+            <section><h3>Pourquoi les prétendants attendent</h3><p>Se déclarer tôt permet d'imposer des thèmes, de lever des fonds et d'organiser un mouvement. Mais cela transforme aussi chaque phrase en promesse, chaque sondage en jugement et chaque allié potentiel en concurrent. La « quasi-candidature » conserve l'attention sans accepter encore toutes les contraintes de la candidature.</p><p>Glucksmann occupe un espace distinct : une gauche européenne, sociale-démocrate et explicitement séparée de La France insoumise. Son résultat de 13,8 % aux européennes de 2024 lui donne une base ; son refus d'une primaire commune à gauche limite en retour les chemins vers une candidature unitaire.</p></section>
+            <section class="argument-grid">
+              <div><h3>Lecture favorable</h3><p>Clarifier une ligne avant de négocier les alliances peut rendre le choix électoral plus lisible. L'unité n'a de valeur démocratique que si elle ne cache pas des désaccords fondamentaux.</p></div>
+              <div><h3>Lecture critique</h3><p>Refuser les mécanismes de sélection collective tout en cherchant à incarner son camp peut ressembler à une demande d'investiture sans compétition. La clarté idéologique ne dispense pas de construire une majorité.</p></div>
+            </section>
+            <aside class="critical"><strong>Le piège personnalisé</strong><p>Les réseaux demandent : « aimez-vous Glucksmann ? » La question civique utile est plus exigeante : quelles politiques propose-t-il, quels arbitrages impliquent-elles, avec quelle coalition parlementaire et quels résultats mesurables ?</p></aside>
+            <section><h3>Comment lire une pré-campagne</h3><p>Observez moins les petites phrases que les refus assumés, les groupes invités, les sujets répétés et les coûts laissés dans l'ombre. Une campagne définit un « nous », un problème central et les personnes avec lesquelles elle accepte de gouverner. C'est là que se trouve le programme avant le programme.</p></section>
+            <div class="sources"><strong>Sources pour creuser</strong>
+              <a href="https://www.ouest-france.fr/elections/presidentielle/il-veut-sortir-la-gauche-du-fatalisme-de-la-defaite-raphael-glucksmann-quasi-candidat-en-quasi-campagne-2b519c34-6735-11f1-8ae5-0c53cf467897" target="_blank" rel="noreferrer">Ouest-France — reportage à l'origine de la tendance</a>
+              <a href="https://place-publique.eu/" target="_blank" rel="noreferrer">Place publique — positions du mouvement</a>
+              <a href="https://results.elections.europa.eu/fr/france/" target="_blank" rel="noreferrer">Parlement européen — résultats 2024</a>
+              <a href="https://trends24.in/france/" target="_blank" rel="noreferrer">Trends24 — présence dans les tendances</a>
+              <a href="https://twitter.com/search?q=Glucksmann" target="_blank" rel="noreferrer">X — conversation brute</a>
+            </div>
+          </div>
+        </details>
+      </article>
+    </section>
+
+    <section class="toolbox">
+      <p class="kicker">Hygiène intellectuelle</p>
+      <h2>Six questions avant de partager</h2>
+      <ol>
+        <li><strong>Quelle est l'affirmation exacte ?</strong><span>Reformulez-la sans adjectif ni intention supposée.</span></li>
+        <li><strong>Quelle preuve la soutient ?</strong><span>Une capture d'écran n'est pas une source complète.</span></li>
+        <li><strong>Qu'est-ce qui la réfuterait ?</strong><span>Une idée impossible à contredire relève de la foi.</span></li>
+        <li><strong>Qui manque à la conversation ?</strong><span>Les plus concernés sont souvent les moins visibles.</span></li>
+        <li><strong>Quel intérêt est servi ?</strong><span>L'intérêt n'annule pas l'argument ; il aide à le situer.</span></li>
+        <li><strong>Pourquoi ai-je envie d'y croire ?</strong><span>Nos émotions sont des informations, pas des démonstrations.</span></li>
+      </ol>
     </section>
 
     <section class="comments">
       <div class="comments-heading">
-        <p class="kicker">Courrier des lecteurs</p>
-        <h2>Vous n'êtes pas d'accord ?<br><span>C'est excellent pour les commentaires.</span></h2>
-        <p>Réagissez à cette édition avec votre compte GitHub. Les commentaires sont publics et soumis aux règles élémentaires de la conversation : critiquez les idées, pas les personnes.</p>
+        <p class="kicker">Agora</p>
+        <h2>Contredisez-nous.<br><span>Précisément.</span></h2>
+        <p>Un désaccord sourcé améliore cette édition. Dites ce qui manque, distinguez les faits de votre jugement et proposez de meilleures sources.</p>
       </div>
       <div class="comments-thread">
         <div class="comment-callout">
           <p class="comment-count" id="comment-count">Le micro est ouvert.</p>
-          <a class="comment-button" href="https://github.com/bibisixtynine/completement-a-l-ouest/discussions/1" target="_blank" rel="noreferrer">
-            Écrire un commentaire <span>↗</span>
-          </a>
-          <p>Connexion avec un compte GitHub. Votre commentaire sera public et apparaîtra ici après publication.</p>
+          <a class="comment-button" href="https://github.com/bibisixtynine/completement-a-l-ouest/discussions/1" target="_blank" rel="noreferrer">Participer à la discussion <span>↗</span></a>
+          <p>Connexion GitHub requise. Les contributions sont publiques.</p>
         </div>
-        <div class="comment-list" id="comment-list" aria-live="polite">
-          <p class="comment-loading">Chargement des réactions du lectorat…</p>
-        </div>
+        <div class="comment-list" id="comment-list" aria-live="polite"><p class="comment-loading">Chargement des contributions…</p></div>
       </div>
     </section>
 
     <footer>
-      <p><strong>Complètement à l'ouest !</strong> est une parodie indépendante. Aucun article original n'est reproduit.</p>
-      <p>Sujets inspirés de la Une numérique de Ouest-France du 14 juin 2026. <a href="https://www.ouest-france.fr/" target="_blank" rel="noreferrer">Lire les informations originales</a>.</p>
+      <p><strong>Complètement à l'ouest !</strong> est un journal indépendant expérimental. Il ne prétend ni représenter X, ni mesurer l'opinion publique.</p>
+      <p>Les tendances ont été relevées en France le 14 juin 2026 via Trends24. Chaque article sépare autant que possible faits, interprétations et questions ouvertes.</p>
     </footer>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
